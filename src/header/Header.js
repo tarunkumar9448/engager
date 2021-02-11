@@ -1,3 +1,4 @@
+import React, {Component} from 'react';
 import avg from '../img/average.png';
 import avg2 from '../img/Average-graph.jpg';
 import android from '../img/icon-ios-android.jpg';
@@ -7,26 +8,37 @@ import download from '../img/download.png';
 import dollar from '../img/dollar.png';
 import mobile from '../img/mobile-app.png';
 import './Header.css';
-
-function Header() {
+class Header extends Component{
+    constructor(props) {
+    super(props);
+    this.state = {
+    USD: "74.534",
+    years: "2021",
+    card1Heading: "Average User Acquisition Cost for Mobile Apps Worldwide",
+    heading: "Key to User Acquisition & Retention",
+    text: "Mobile app startups & businesses, struggling to boost their user acquisition & retention rates, stand to gain a lot from engager360 – the most trusted user acquisition tool available under the Sun.",
+    btnText: "Schedule Demo"
+    };
+  }
+    render(){
   return (
     <header id="home" className="masthead">
         <div className="container">
             <div className="row">
                 <div className="col-lg-4 col-xl-5 mb-5">
                     <div className="intro-text">
-                        <h1 className="main-heading text-white">Key to User Acquisition & Retention</h1>
-                        <p className="text-heading text-white">Mobile app startups & businesses, struggling to boost their user acquisition & retention rates, stand to gain a lot from engager360 – the most trusted user acquisition tool available under the Sun.</p>
-                        <a className="btn btn-yellow btn-xl js-scroll-trigger px-4 py-2 slow" href="#">Schedule Demo</a>
+                        <h1 className="main-heading text-white">{this.state.heading}</h1>
+                        <p className="text-heading text-white">{this.state.text}</p>
+                        <a className="btn btn-yellow btn-xl js-scroll-trigger px-4 py-2 slow" href="#">{this.state.btnText}</a>
                     </div>
                 </div>
                 <div className="col-lg-8 col-xl-7">
                     <div className="graph-section card-columns position-relative">
                         <div className="card one">
                             <div className="card-body">
-                                <h6 className="card-title d-flex align-items-center">Average User Acquisition Cost for Mobile Apps Worldwide <img src={avg} alt="average" className="d-block" /> </h6>
+                                <h6 className="card-title d-flex align-items-center">{this.state.card1Heading} <img src={avg} alt="average" className="d-block" /> </h6>
                                 <p className="card-text">Across Latin America- Approx.</p>
-                                <h2>107.53</h2>
+                                <h2>{this.state.USD}</h2>
                                 <p className="mb-4">U.S Dollars <small className="text-green">Last Year</small></p>
                                 <img src={avg2}alt="graph" className="img-fluid d-block" />
                             </div>
@@ -62,7 +74,7 @@ function Header() {
                         </div>
                         <div className="card four">
                             <div className="card-body">
-                                <h5 className="year text-green">2022</h5>
+                                <h5 className="year text-green">{this.state.years}</h5>
                                 <img src={download} alt="download" />
                                 <h6 className="card-title d-flex align-items-center"><img src={mobile} alt="average" className="d-block mx-auto my-3" /> </h6>
                                 <h2 className="text-center">Mobile App <small className="d-block">Downloads Worldwide</small></h2>
@@ -75,6 +87,7 @@ function Header() {
         </div>
     </header>
   );
+}
 }
 
 export default Header;
