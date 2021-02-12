@@ -1,3 +1,4 @@
+import React, {Component} from 'react';
 import call from '../img/call-us.png';
 import facebook from '../img/facebook-hover.png';
 import linkedin from '../img/linkedin-hover.png';
@@ -6,7 +7,8 @@ import instagram from '../img/instagram-hover.png';
 import pinterest from '../img/pinterest-hover.png';
 import './Footer.css';
 
-function Footer() {
+class Footer extends Component{
+    render(){
   return (
         <footer id="contact" className="footer">
         <div className="container">
@@ -40,6 +42,7 @@ function Footer() {
         </div>
     </footer>
   );
+}
 }
 
 export default Footer;

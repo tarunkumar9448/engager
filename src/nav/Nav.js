@@ -1,9 +1,10 @@
+import React, {Component} from 'react';
 import logo from '../img/engager_logo.png';
 import logo2 from '../img/logo_2.png';
 import './Nav.css';
 
-
-function Nav() {
+class Nav extends Component{
+    render(){
   return (
      <nav className="navbar navbar-expand-lg navbar-dark fixed-top slow" id="mainNav">
         <div className="container">
@@ -42,6 +43,7 @@ function Nav() {
         </div>
     </nav>
   );
+}
 }
 
 export default Nav;
