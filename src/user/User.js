@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import phone from '../img/phone.png';
-import './User.css';
+//import './User.css';
 
 class User extends Component{
       constructor(props) {

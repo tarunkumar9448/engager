@@ -7,7 +7,7 @@ import apps from '../img/apps.png';
 import download from '../img/download.png';
 import dollar from '../img/dollar.png';
 import mobile from '../img/mobile-app.png';
-import './Header.css';
+//import './Header.css';
 class Header extends Component{
     constructor(props) {
     super(props);

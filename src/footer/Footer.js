@@ -5,7 +5,7 @@ import linkedin from '../img/linkedin-hover.png';
 import twitter from '../img/twitter-hover.png';
 import instagram from '../img/instagram-hover.png';
 import pinterest from '../img/pinterest-hover.png';
-import './Footer.css';
+//import './Footer.css';
 
 class Footer extends Component{
     render(){

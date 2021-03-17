@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import qns from '../img/qns-ans.png';
 import surface from '../img/surface.png';
 import action from '../img/action.png';
-import './Service.css';
+//import './Service.css';
 
 class Service extends Component{
     render(){

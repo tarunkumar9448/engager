@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import logo from '../img/engager_logo.png';
 import logo2 from '../img/logo_2.png';
-import './Nav.css';
+//import './Nav.css';
 
 class Nav extends Component{
     render(){

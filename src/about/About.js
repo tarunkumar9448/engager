@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import analytics from '../img/analytics.png';
-import LTV from '../img/LTV.png';
-import retenation from '../img/user-retenation.png';
-import messaging from '../img/app-messaging.png';
+//import analytics from '../img/analytics.png';
+//import LTV from '../img/LTV.png';
+//import retenation from '../img/user-retenation.png';
+//import messaging from '../img/app-messaging.png';
 import cloud from '../img/cloud-mes.png';
-import './About.css';
+//import './About.css';
 import data from '../data/Data';
 
 
